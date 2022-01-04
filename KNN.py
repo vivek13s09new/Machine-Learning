@@ -21,7 +21,7 @@ class KNN:
     weight: 
         uniform (default): All k nearest points assigned equal weights
         harmonic: Nearest instance of neighbor gets a weight of 1/1. second
-                  nearest 1/2, the 1/3 and so on... 
+                  nearest 1/2, third nearest 1/3 and so on... 
 
     """
     def __init__(self, k = 3, p = 2, weight = 'uniform') -> None:
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     iris = datasets.load_iris()
     X, y = iris.data, iris.target
 
-
+    # Accuracy function
     def accuracy(y_true, y_pred):
         accuracy = np.sum(y_true == y_pred) / len(y_true)
         return accuracy
