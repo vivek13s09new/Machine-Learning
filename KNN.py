@@ -61,8 +61,7 @@ if __name__ == "__main__":
     from sklearn.model_selection import train_test_split
     #from sklearn.preprocessing import StandardScaler
 
-    #scaler = StandardScaler()
-
+    # Load inputs and labels
     iris = datasets.load_iris()
     X, y = iris.data, iris.target
 
